@@ -4,6 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        var target, guess;
+        var firstPlayer, secondPlayer;
+        target = window.prompt("enter a number between 1 and 10");
+         if (target < 1 && target >10) {
+            document.write(target + " is not a valid number")
+         } else {
+             guess = window.prompt("guess the number");
+             document.write(guess)
+             if(guess < target) {
+                 document.write("your guess is lower than the target")
+             }
+             else if(guess > target) {
+                 document.write("your guess is higher than the target")
+             }
+             else document.write("congratulations you win")
+
+         
+            
+        }
+        
+
+    </script>
 </head>
 <body>
     

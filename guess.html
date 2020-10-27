@@ -8,22 +8,20 @@
         var target, guess;
         var firstPlayer, secondPlayer;
         target = window.prompt("enter a number between 1 and 10");
-         if (target < 1 && target >10) {
+         if ((target >10) || (target < 1)) {
             document.write(target + " is not a valid number")
          } else {
              guess = window.prompt("guess the number");
-             document.write(guess)
+        
              if(guess < target) {
-                 document.write("your guess is lower than the target")
+                 document.write("your guess is lower than the target: "+ target)
              }
              else if(guess > target) {
-                 document.write("your guess is higher than the target")
+                 document.write("your guess is higher than the target: "+target)
              }
              else document.write("congratulations you win")
 
-         
-            
-        }
+         }
         
 
     </script>

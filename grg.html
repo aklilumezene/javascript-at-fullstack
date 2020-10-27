@@ -1,0 +1,35 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess</title>
+    <script>
+        var number;
+        var choice;
+        number = window.prompt("Pick a number between 1 & 10");
+        if (1 > number) {
+            document.write("Number is out of limits. Pick again");
+        }
+        else if (number > 10) {
+            document.write("Number is out of limits. Pick again");
+        }
+        else {
+            choice = window.prompt("Let's move on. Player 2 choose a number");
+            if (choice > number) {
+            document.write("Your choice is greater than the number picked. Choose again.");
+        }
+        else if (choice < number) {
+            document.write("Your choice is lower than the number picked. Choose again.");
+        }
+        else {
+            //"bravo" is displayed even when number is out of limits            
+            document.write("Bravo");
+        }
+        }
+        
+        
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

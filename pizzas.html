@@ -6,13 +6,24 @@
     <title>Pizza</title>
 </head>
 <script>
-    var ingredient1,ingredient2,ingredient3,pizza;
+    var ingredient1,ingredient2,ingredient3,pizza,size;
     
     ingredient1 = window.prompt("what are your three favorite ingredients to make pizza ")
     ingredient2 = window.prompt("the second ingredient ?");
     ingredient3 = window.prompt("add the third favorite please:");
     pizza =  ingredient1 + "-" + ingredient2 + "-" + ingredient3;
-    document.write("Here are your favorite ingredients to make Pizza:" + " " + pizza);
+    size = window.prompt("what size of pizza you prefer")
+    document.write("you ordered a" + size + "pizza with ingredients to make it:" + " " + pizza);
+    if (size == "small") {
+        if(ingredient1 == "ham") {
+            
+        }
+        document.write("you have 5% discount");
+    }
+         
+     
+     
+
     
 </script>
 <body>
